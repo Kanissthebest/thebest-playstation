@@ -169,6 +169,12 @@ images_de_salle img{
     color: #adb5bd;
     background-color:#1a1a2e;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+.game:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 210, 255, 0.5);
+    filter: brightness(1.1);
 }
 .game h3{
     margin-top: 0;
@@ -304,7 +310,6 @@ footer img{
     .games-list {
         grid-template-columns: 1fr; /* Un jeu par ligne sur mobile */
         width: 100%;
-        margin:auto;
     }
     .footer{
         grid-template-columns: 1fr; /* Un élément par ligne sur mobile */
@@ -313,9 +318,7 @@ footer img{
     .footer>p{
         grid-column: 1; /* Le paragraphe occupe toute la largeur */
     }
-    .game {
-        width: 90%;
-    }
+
 
     .menu-toggle {
         display: flex; /* On affiche le bouton sur mobile */

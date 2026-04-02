@@ -336,6 +336,7 @@ footer img{
     }
 
     nav.active {
+        margin-top: 15px;
         display: block; /* On l'affiche quand la classe 'active' est ajoutée */
     }
 

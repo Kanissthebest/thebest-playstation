@@ -6,7 +6,9 @@ const navMenu = document.querySelector('nav');
 if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
-        console.log("Menu cliqué !"); // Pour tester dans la console (F12)
+
+        // Transforme le hamburger en X
+        menuToggle.classList.toggle('is-active');
     });
 }
 // --- LOGIQUE DE LA BOUCLE DE JEUX (Uniquement si la grille existe) ---

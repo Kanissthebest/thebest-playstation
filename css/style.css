@@ -327,7 +327,7 @@ footer img{
     nav {
         display: none; /* On cache la nav par défaut */
         position: absolute;
-        top: 70px; /* Juste en dessous du header */
+        top: 90px; /* Juste en dessous du header */
         left: 0;
         width: 100%;
         background-color: #1e293b;
@@ -336,7 +336,6 @@ footer img{
     }
 
     nav.active {
-        margin-top: 15px;
         display: block; /* On l'affiche quand la classe 'active' est ajoutée */
     }
 
@@ -348,6 +347,36 @@ footer img{
 
     nav ul li {
         margin: 15px 0;
+    }
+
+    /* Animation des barres du menu */
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 4px 0;
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+    border-radius: 3px;
+}
+
+    /* --- Transformation en X --- */
+
+    /* La barre du milieu disparaît */
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    /* La barre du haut tourne à 45 degrés */
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+        background-color: #ff4757; /* Optionnel : devient rouge en fermant */
+    }
+
+    /* La barre du bas tourne à -45 degrés */
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+        background-color: #ff4757;
     }
 }
 

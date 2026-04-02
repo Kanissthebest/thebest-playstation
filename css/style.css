@@ -304,6 +304,7 @@ footer img{
     .games-list {
         grid-template-columns: 1fr; /* Un jeu par ligne sur mobile */
         width: 100%;
+        margin:auto;
     }
     .footer{
         grid-template-columns: 1fr; /* Un élément par ligne sur mobile */
